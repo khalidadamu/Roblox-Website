@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+     <link rel="icon" type="image/x-icon" href="/images/favicon.jpg">
+
+     <script src="https://cdn.tailwindcss.com"></script>
+     <script defer src="https://unpkg.com/alpinejs@3.2.3/dist/cdn.min.js"></script>
+     <script src="https://unpkg.com/tailwindcss-jit-cdn"></script>
+     <link rel="stylesheet" href="style.css">
+
+
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>RobloxGamerz</title>
+</head>
+<body>
+
+     <!-- Header and landing page -->
+     <!-- AlpineJS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.8.1/cdn.min.js" defer></script>
+
+<!-- Slider Component Container -->
+<div class="flex flex-col items-center justify-center mt-32 bg-yellow-400" x-cloak x-data="appData()" x-init="appInit()">
+    <div class="flex flex-col bg-yellow-400">
+        <!-- Page Scroll Progress -->
+        <div class="fixed inset-x-0 top-0 z-50 h-0.5 mt-0.5
+            bg-green-500" :style="`width: ${percent}%`  bg-yellow-400"></div>
+
+        <!-- Navbar -->
+        <nav id = "background__color"class="flex justify-around py-4 bg-white/80
+            backdrop-blur-md shadow-md w-full
+            fixed top-0 left-0 right-0 z-10 bg-yellow-400">
+
+            <!-- Logo Container -->
+            <div class="flex items-center rounded-sm">
+                <!-- Logo -->
+                <a class="cursor-pointer">
+                    <h3 class="text-2xl font-medium text-blue-500">
+                        <img class="h-10 object-cover rounded-full "
+                            src="images/logo.png" alt="Store Logo">
+                           
+                    </h3>
+                </a>
+            </div>
+
+            <!-- Links Section -->
+            <div class="items-center hidden space-x-8 lg:flex">
+                <a class="flex text-gray-600 hover:text-green-500
+                    cursor-pointer transition-colors duration-300">
+                    Home
+                </a>
+
+                <a class="flex text-gray-600 
+                    cursor-pointer transition-colors duration-300
+                    font-semibold text-blue-600">
+                    About Us
+                </a>
+
+                <a class="flex text-gray-600 hover:text-green-500
+                    cursor-pointer transition-colors duration-300">
+                    Trending-Games
+                </a>
+
+                <a class="flex text-gray-600 hover:text-green-500
+                    cursor-pointer transition-colors duration-300">
+                    Help
+                </a>
+
+                <a class="flex text-gray-600 hover:text-green-500
+                    cursor-pointer transition-colors duration-300">
+                    Blog
+                </a>
+
+                <a class="flex text-gray-600 hover:text-green-500
+                    cursor-pointer transition-colors duration-300">
+                    Shop
+                </a>
+            </div>
+
+            <!-- Icon Menu Section -->
+            <div class="flex items-center space-x-5">
+               
+                <!-- Register -->
+                <a  href = "https://www.youtube.com/@RobloxGamerz" class="flex text-gray-600 hover:text-green-500
+                    cursor-pointer transition-colors duration-300">
+
+                    
+                    <img class="fill-current h-5 w-5 mr-2 mt-0.5" src="images/youtube.svg" alt="YouTube">
+                    YouTube
+                </a>
+            </div>
+        </nav>
+    </div>
+
+    
+
+    <!-- Notes -->
+</div>
+<script>
+    const appData = () => {
+        return {
+            percent: 0,
+
+            appInit() {
+                window.addEventListener('scroll', () => {
+                    let winScroll = document.body.scrollTop || document.documentElement.scrollTop,
+                        height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+
+                    this.percent = Math.round((winScroll / height) * 100);
+                });
+            },
+        };
+    };
+</script>
+
+
+      <!-- Footer -->
+     
+
+
+</body>
+</html>
+     
+
+    
