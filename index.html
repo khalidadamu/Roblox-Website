@@ -9,6 +9,9 @@
      <script src="https://unpkg.com/tailwindcss-jit-cdn"></script>
      <link rel="stylesheet" href="style.css">
 
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css'>
+
 
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,11 +25,11 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.8.1/cdn.min.js" defer></script>
 
 <!-- Slider Component Container -->
-<div class="flex flex-col items-center justify-center mt-32 bg-yellow-400" x-cloak x-data="appData()" x-init="appInit()">
+<div class="flex flex-col items-center justify-center mt-20 bg-yellow-400" x-cloak x-data="appData()" x-init="appInit()">
     <div class="flex flex-col bg-yellow-400">
         <!-- Page Scroll Progress -->
         <div class="fixed inset-x-0 top-0 z-50 h-0.5 mt-0.5
-        bg-blue-500" :style="`width: ${percent}%`"></div>
+        bg-green-300" :style="`width: ${percent}%`"></div>
 
         <!-- Navbar -->
         <nav id = "background__color"class="flex justify-around py-4 bg-white/80
@@ -63,10 +66,7 @@
                     Trending-Games
                 </a>
 
-                <a class="flex text-gray-600 hover:text-green-500
-                    cursor-pointer transition-colors duration-300">
-                    Help
-                </a>
+               
 
                 <a class="flex text-gray-600 hover:text-green-500
                     cursor-pointer transition-colors duration-300">
@@ -78,6 +78,8 @@
                     Shop
                 </a>
             </div>
+
+            
 
             <!-- Icon Menu Section -->
             <div class="flex items-center space-x-5">
@@ -93,34 +95,131 @@
             </div>
         </nav>
     </div>
-
-    
-
-    <!-- Notes -->
 </div>
-<script>
-    const appData = () => {
-        return {
-            percent: 0,
-
-            appInit() {
-                window.addEventListener('scroll', () => {
-                    let winScroll = document.body.scrollTop || document.documentElement.scrollTop,
-                        height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-
-                    this.percent = Math.round((winScroll / height) * 100);
-                });
-            },
-        };
-    };
-</script>
 
 
-      <!-- Footer -->
+
+<!-- Trusted Section -->
+<!-- <div class="bg-yellow-400 sm:py-2">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      
+      <div class="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
+        <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="victoria.jpg" alt="Transistor" width="158" height="48">
+        <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="iuea.png" alt="Reform" width="158" height="48">
+        <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="isbat.jpeg" alt="Tuple" width="158" height="48">
+        <img class="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1" src="kiu.jpg" alt="SavvyCal" width="158" height="48">
+        <img class="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1" src="chris.jpeg" alt="Statamic" width="158" height="48">
+      </div>
+    </div>
+  </div> -->
+
+
+<!-- Another Article -->
+<!-- <div id = "section_article"class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 
+ hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 ">
+    <a href="#">
+        <img class="rounded-t-lg" src="https://demos.creative-tim.com/material-kit-pro/assets/img/annie-spratt.jpg" alt="" />
+    </a>
+    <div class="p-5">
+        <a href="#">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+        </a>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+        <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            Read more
+            <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+        </a>
+    </div>
+</div> -->
+
+
+
+<!-- Arctcle Section  -->
+<!-- component -->
+<!-- partial:index.partial.html -->
+<div class="blog-slider">
+    <div class="blog-slider__wrp swiper-wrapper">
+      <div class="blog-slider__item swiper-slide">
+        <div class="blog-slider__img">
+          
+          <img src="images/img2.webp" alt="">
+        </div>
+        <div class="blog-slider__content">
+          <span class="blog-slider__code">26 December 2019</span>
+          <div class="blog-slider__title">All monsters in Doors and how to survive them</div>
+          <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi? </div>
+          <a href="#" class="blog-slider__button">READ MORE</a>
+        </div>
+      </div>
+      <div class="blog-slider__item swiper-slide">
+        <div class="blog-slider__img">
+          <img src="images/img5.webp" alt="">
+        </div>
+        <div class="blog-slider__content">
+          <span class="blog-slider__code">26 December 2019</span>
+          <div class="blog-slider__title">All monsters in Doors and how to survive them</div>
+          <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
+          <a href="#" class="blog-slider__button">READ MORE</a>
+        </div>
+      </div>
+      
+      <div class="blog-slider__item swiper-slide">
+        <div class="blog-slider__img">
+          <img src="images/img3.png" alt="">
+        </div>
+        <div class="blog-slider__content">
+          <span class="blog-slider__code">26 December 2019</span>
+          <div class="blog-slider__title">All monsters in Doors and how to survive them</div>
+          <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
+          <a href="#" class="blog-slider__button">READ MORE</a>
+        </div>
+      </div>
+      
+    </div>
+    <div class="blog-slider__pagination"></div>
+  </div>
+
+
+  <!-- Header -->
+  <div class="header__title"> Trending Games </div>
+
+ 
+
+  <!--  More Article -->
+  <!-- component -->
+<!-- This is an example component -->
+<div class="max-w-2xl mx-auto">
+    
+  <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm dark:bg-gray-800 dark:border-gray-700">
+      <a href="#">
+          <img class="rounded-t-lg" src="https://flowbite.com/docs/images/blog/image-1.jpg" alt="">
+      </a>
+      <div class="p-5">
+          <a href="#">
+              <h5 class="text-gray-900 font-bold text-2xl tracking-tight mb-2 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+          </a>
+          <p class="font-normal text-gray-700 mb-3 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+          <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center  dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+              Read more
+              <svg class="-mr-1 ml-2 h-4 w-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+          </a>
+      </div>
+  </div>
+
+  <p class="mt-5">This card component is part of a larger, open-source library of Tailwind CSS components. Learn more by going to the official <a class="text-blue-600 hover:underline" href="#" target="_blank">Flowbite Documentation</a>.</p>
+</div>
+
+
+
+
+  <!-- partial -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js'></script>
      
 
 
 </body>
+<script src="app.js"></script>
 </html>
      
 
