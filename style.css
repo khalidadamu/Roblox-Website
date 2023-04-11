@@ -13,7 +13,7 @@ body {
      /* background-image: linear-gradient(147deg, #ffffff 0%, #afafaf 100%); */
      background-repeat: repeat;
      background-color: #ffffff;
-     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%236200ff' fill-opacity='0.05'%3E%3Cpath fill-rule='evenodd' d='M11 0l5 20H6l5-20zm42 31a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM0 72h40v4H0v-4zm0-8h31v4H0v-4zm20-16h20v4H20v-4zM0 56h40v4H0v-4zm63-25a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM53 41a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-30 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-28-8a5 5 0 0 0-10 0h10zm10 0a5 5 0 0 1-10 0h10zM56 5a5 5 0 0 0-10 0h10zm10 0a5 5 0 0 1-10 0h10zm-3 46a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM21 0l5 20H16l5-20zm43 64v-4h-4v4h-4v4h4v4h4v-4h4v-4h-4zM36 13h4v4h-4v-4zm4 4h4v4h-4v-4zm-4 4h4v4h-4v-4zm8-8h4v4h-4v-4z'/%3E%3C/g%3E%3C/svg%3E");
+     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%230000ff' fill-opacity='0.04'%3E%3Cpath fill-rule='evenodd' d='M11 0l5 20H6l5-20zm42 31a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM0 72h40v4H0v-4zm0-8h31v4H0v-4zm20-16h20v4H20v-4zM0 56h40v4H0v-4zm63-25a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM53 41a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-30 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-28-8a5 5 0 0 0-10 0h10zm10 0a5 5 0 0 1-10 0h10zM56 5a5 5 0 0 0-10 0h10zm10 0a5 5 0 0 1-10 0h10zm-3 46a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM21 0l5 20H16l5-20zm43 64v-4h-4v4h-4v4h4v4h4v-4h4v-4h-4zM36 13h4v4h-4v-4zm4 4h4v4h-4v-4zm-4 4h4v4h-4v-4zm8-8h4v4h-4v-4z'/%3E%3C/g%3E%3C/svg%3E");
 }
 
 
@@ -142,7 +142,7 @@ body {
      flex-shrink: 0;
      height: 300px;
      /* background-image: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%); */
-     box-shadow: 4px 13px 30px 1px rgba(25, 0, 255, 0.2);
+     box-shadow: 4px 13px 30px 1px rgba(34, 35, 58, 0.2);
      border-radius: 5px;
      transform: translateX(-80px);
      overflow: hidden;
@@ -235,11 +235,11 @@ body {
 
 .blog-slider__button {
      display: inline-flex;
-     background-image: linear-gradient(147deg, #1000ff 0%, #000000 74%);
+     background: rgb(18, 31, 43);
      padding: 15px 35px;
      border-radius: 50px;
      color: #fff;
-     box-shadow: 0px 14px 80px rgba(47, 0, 255, 0.4);
+     box-shadow: 0px 14px 80px rgb(18, 31, 43);
      text-decoration: none;
      font-weight: 500;
      justify-content: center;
@@ -307,9 +307,9 @@ body {
 
 .blog-slider__pagination .swiper-pagination-bullet-active {
      opacity: 1;
-     background: blue;
+     background: rgb(18, 31, 43);
      height: 30px;
-     box-shadow: 0px 0px 20px rgba(1, 26, 255, 0.3);
+     box-shadow: 0px 0px 20px rgb(18, 31, 43);
 }
 
 @media screen and (max-width: 768px) {
@@ -329,7 +329,13 @@ h3,
 h4,
 h5,
 h6,
-div {
+div,
+input {
+     font-family: 'Space Mono', monospace;
+     font-weight: bold;
+}
+
+::placeholder {
      font-family: 'Space Mono', monospace;
      font-weight: bold;
 }
@@ -341,7 +347,7 @@ body {
 } */
 
 #background__color {
-     background-image: linear-gradient(147deg, #001fff 0%, #000000 100%);
+     background: rgb(18, 31, 43);
      /* background: rgb(0, 187, 0); */
 
 }
@@ -355,7 +361,7 @@ body {
 }
 
 .text-gray-600 {
-     color: wheat !important;
+     color: white !important;
 }
 
 /* Adjust article card size */
@@ -380,13 +386,13 @@ a:hover {
 
 
 .header__title {
-     color: wheat;
-     font-size: 3em;
+     color: white;
+     font-size: 2em;
      /* position: relative;
      top: 50%;
      left: 50%; */
      /* transform: translate(50%, 50%); */
-     background-image: linear-gradient(147deg, #001fff 0%, #000000 100%);
+     background-image: linear-gradient(147deg, #00294b 0%, #3d3d3d 74%);
      background-size: 30% 250px;
      background-repeat: no-repeat;
      background-position: 50% 0%;
@@ -419,6 +425,15 @@ a:hover {
 
 /* Roblox color */
 #robloxgamerz_title {
-     color: #001fff;
+     color: wheat;
      font-family: 'Press Start 2P', cursive;
+}
+
+
+.hero__background {
+     background-image: url(images/background.jpg);
+     filter: blur(0.5em);
+     /* opacity: 0.6; */
+
+
 }
