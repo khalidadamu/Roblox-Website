@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+     <link rel="icon" type="image/x-icon" href="../images/favicon.jpg">
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="article.css">
+
+<script src="https://cdn.tailwindcss.com"></script>
+     <script defer src="https://unpkg.com/alpinejs@3.2.3/dist/cdn.min.js"></script>
+     <script src="https://unpkg.com/tailwindcss-jit-cdn"></script>
+     <link rel="stylesheet" href="style.css">
+     <link href="https://unpkg.com/pattern.css" rel="stylesheet">
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css'>
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Doors Tips and Tricks</title>
+</head>
+<body>
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.8.1/cdn.min.js" defer></script>
+
+<!-- Slider Component Container -->
+<div class="flex flex-col items-center justify-center mt-20 bg-yellow-400" x-cloak x-data="appData()" x-init="appInit()">
+    <div class="flex flex-col bg-yellow-400">
+        <!-- Page Scroll Progress -->
+        <div class="fixed inset-x-0 top-0 z-50 h-0.5 mt-0.5
+        bg-green-300" :style="`width: ${percent}%`"></div>
+
+        <!-- Navbar -->
+        <nav id = "background__color"class="flex justify-around py-4 bg-white/80
+            backdrop-blur-md shadow-md w-full
+            fixed top-0 left-0 right-0 z-10 bg-yellow-400">
+
+            <!-- Logo Container -->
+            <div class="flex items-center rounded-sm">
+                <!-- Logo -->
+                <a href="../index.html" class="cursor-pointer">
+                    <h3 class="text-2xl font-medium text-blue-500">
+                        <img class="h-10 object-cover rounded-full "
+                            src="../images/logo.png" alt="Store Logo">
+                           
+                    </h3>
+                </a>
+            </div>
+
+            <!-- Links Section -->
+            <div class="items-center hidden space-x-8 lg:flex">
+                <a href = "../index.html" class="flex text-gray-600 hover:text-green-500
+                    cursor-pointer transition-colors duration-300">
+                    Home
+                </a>
+
+                <a href = "../index.html" class="flex text-gray-600 
+                    cursor-pointer transition-colors duration-300
+                    font-semibold text-blue-600">
+                    About Us
+                </a>
+
+                <a href = "../index.html" class="flex text-gray-600 hover:text-green-500
+                    cursor-pointer transition-colors duration-300">
+                    Trending-Games
+                </a>
+
+               
+
+                <a href = "../index.html" class="flex text-gray-600 hover:text-green-500
+                    cursor-pointer transition-colors duration-300">
+                    Blog
+                </a>
+
+                <a href = "../index.html" class="flex text-gray-600 hover:text-green-500
+                    cursor-pointer transition-colors duration-300">
+                    Shop
+                </a>
+            </div>
+
+            
+
+            <!-- Youtube -->
+            <div class="flex items-center space-x-5">
+               
+               <!-- Youtube Link -->
+                <a  href = "https://www.youtube.com/@RobloxGamerz" class="flex text-gray-600 hover:text-green-500
+                    cursor-pointer transition-colors duration-300">
+
+                    
+                    <img class="fill-current h-5 w-5 mr-2 mt-0.5" src="../images/youtube.svg" alt="YouTube">
+                    YouTube
+                </a>
+            </div>
+        </nav>
+    </div>
+</div>
+
+
+
+
+<!-- Read Article Here -->
+<div class="blog-slider">
+    <div class="blog-slider__wrp swiper-wrapper">
+     
+    <div>
+         <h1 id="robloxgamerz_title">All monsters in Doors and how to survive them</h1>
+
+         <img src="../images/doors.jpg" alt="">
+         <p>
+              Rush is one of the first, if not the first, entities players will encounter in The Hotel. When Rush spawns, the lights in multiple rooms will flicker, and you'll hear a distorted growling sound—this is your sign to hide! You can avoid Rush by hiding in a vent or closet or crawling under a bed. 
+         </p>
+
+         <p>
+              If you fail to find a hiding spot before Rush speeds by, you will die on contact. Once Rush has passed, all the lights in the rooms it ran through will be broken, but you can continue toward the next door without fear of its return.
+
+Sometimes, Rush will cause the lights to flicker without actually spawning. In these cases, watch your back and continue toward the next door.
+         </p>
+
+  </div>
+     
+</body>
+
+<script src="../app.js"></script>
+</html>

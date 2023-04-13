@@ -1,0 +1,32 @@
+#robloxgamerz_title {
+     font-size: 1.5em;
+     padding: 30px;
+     color: red !important;
+     padding-left: 70px;
+     padding-right: 70px;
+     text-align: center;
+     text-transform: capitalize !important;
+}
+
+p {
+     padding: 10px 150px 10px 150px;
+     color: rgb(97, 97, 97);
+     text-align: justify;
+     line-height: 35px;
+
+}
+
+.blog-slider {
+     height: 50% !important;
+     width: 100%;
+     /* position: relative; */
+     max-width: 1080px;
+     margin-top: -5800px !important;
+     margin-bottom: 500px;
+}
+
+img {
+     /* width: 100%; */
+     margin: auto;
+     padding-bottom: 40px;
+}
