@@ -30,3 +30,8 @@ img {
      margin: auto;
      padding-bottom: 40px;
 }
+
+.footer__logo {
+     width: 60px !important;
+     height: auto !important;
+}
